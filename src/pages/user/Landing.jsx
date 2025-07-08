@@ -81,14 +81,14 @@ const Landing = () => {
           <input
             type="text"
             placeholder="YouTube video link"
-            className="w-full sm:w-96 px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full sm:w-96 px-4 py-2 rounded bg-white bg-opacity-20 text-black placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
             value={link}
             onChange={(e) => setLink(e.target.value)}
           />
           <input
             type="text"
             placeholder="Keyword"
-            className="w-full sm:w-64 px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full sm:w-64 px-4 py-2 rounded bg-white bg-opacity-20 text-black placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
           />
