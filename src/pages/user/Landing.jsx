@@ -27,7 +27,7 @@ const Landing = () => {
     setMatches([]);
 
     try {
-      const res = await fetch("http://localhost:4000/search", {
+      const res = await fetch("https://tubecue-back.onrender.com/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ videoId, keyword }),
@@ -71,8 +71,6 @@ const Landing = () => {
         muted
       ></video>
 
-      {/* <div className="absolute inset-0 bg-black bg-opacity-100 z-10 pointer-events-none"></div> */}
-
       <div className="z-20 backdrop-blur-md bg-white/10 rounded-xl p-8 max-w-2xl w-full text-center text-white pointer-events-auto">
         <h1 className="text-4xl font-bold mb-4">Jump to what matters</h1>
         <p className="text-sm text-gray-300 mb-6">
@@ -83,14 +81,14 @@ const Landing = () => {
           <input
             type="text"
             placeholder="YouTube video link"
-            className="w-full sm:w-96 px-4 py-2 rounded bg-white bg-opacity-20 text-black placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full sm:w-96 px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
             value={link}
             onChange={(e) => setLink(e.target.value)}
           />
           <input
             type="text"
             placeholder="Keyword"
-            className="w-full sm:w-64 px-4 py-2 rounded bg-white bg-opacity-20 text-black placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full sm:w-64 px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400"
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
           />
