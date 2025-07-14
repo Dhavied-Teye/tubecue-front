@@ -27,7 +27,7 @@ const Landing = () => {
     setMatches([]);
 
     try {
-      const res = await fetch("https://tubecue-back.onrender.com/search", {
+      const res = await fetch("https://tubecue-back.fly.dev/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ videoId, keyword }),
